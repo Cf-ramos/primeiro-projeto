@@ -9,7 +9,7 @@
     --cor5:#1C1519; }
  
 body {background-image: url(midias/padrao.png);
-     background-color: var();
+     background-color: var(--cor0);
      font-family: "Montserrat", Arial, Helvetica, sans-serif;
      margin: 0px;}
 
@@ -51,22 +51,34 @@ main {
      max-width: 800px;
      margin: auto;}
 
-#midia {background-size: cover ;} 
-     
-.corpo { width: 100%;
-       border-radius: 15px;}
-.video {background-color: var(--cor1);
-         margin: 0px -30px 0px;
-         padding: 5px;
-         padding-bottom: 50%;
-         position: relative;}
+.margem {width: 90%;
+           margin: auto;} 
 
-.video > video { border-radius: 15px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;}
+.parallax { background-image: url(midias/web.png);
+           height: 300px;
+           background-attachment: fixed;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: contain;
+           border-radius: 15px;}
+
+#ref {text-align: right;
+               color: var(--cor3);
+               text-decoration: underline;
+               margin: 2% 7%;}
+ 
+.videorosa {background-color: var(--cor1);
+      margin: 0px -30px 0px;
+      padding: 5px;
+      padding-bottom: 50%;
+      position: relative;}
+
+.videorosa > video { border-radius: 15px;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;}
 
 h1, h2 {color: var(--cor2);
      font-size: 28px;
@@ -103,20 +115,22 @@ p {text-indent: 20px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed;}      
+      background-attachment: fixed;}  
 
-.container {
-      position: relative;
-      height: 500px;}
+table {width: 400px;
+      height: 200px;
+      border-collapse: collapse;}
+td {border: 2px, solid, var(--cor2);
+      padding: 8px;
+      text-align: center;
+      vertical-align: top;}
 
-.conteudo {
-      position: absolute;
-      background-attachment: fixed;
-      border-radius: 18px;
-      left: 10%;
-      top: 10%;
-      transform: translate (-10%, -10%);
-      height: 400px;
-      width: 600px;
-      background-image: url(midias/web.jpg ) ;
-      background-size: cover;}
+thead {background-color: var(--cor3);
+      width: 400px;
+      height: 50px;}
+
+th { border: 2px, solid, var(--cor2);
+      border-collapse: collapse;
+      text-align: center;
+      vertical-align: middle;} 
+.two {background-color: var(--cor0);}
