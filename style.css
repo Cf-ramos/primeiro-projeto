@@ -9,7 +9,7 @@
     --cor5:#1C1519; }
  
 body {background-image: url(midias/padrao.png);
-     background-color: #F7DACC;
+     background-color: var();
      font-family: "Montserrat", Arial, Helvetica, sans-serif;
      margin: 0px;}
 
@@ -50,10 +50,12 @@ main {
      min-width: 320px;
      max-width: 800px;
      margin: auto;}
+
+#midia {background-size: cover ;} 
      
 .corpo { width: 100%;
        border-radius: 15px;}
-.video {background-color: #BF2D40;
+.video {background-color: var(--cor1);
          margin: 0px -30px 0px;
          padding: 5px;
          padding-bottom: 50%;
@@ -86,11 +88,35 @@ p {text-indent: 20px;
       width: 300px;
       height: 320px;}
 
-footer {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: var(--cor0);
-     padding: 5px;
-     margin: 0px;
-     background-color: var(--cor2);}
+ footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--cor0);
+      padding: 5px;
+      margin: 0px;
+      background-color: var(--cor2);}
+
+/*Aqui começa o Css Expecifico da pag "contato"*/
+.contato {background-image: url(midias/backgrund.png);
+      height: autopx;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;}      
+
+.container {
+      position: relative;
+      height: 500px;}
+
+.conteudo {
+      position: absolute;
+      background-attachment: fixed;
+      border-radius: 18px;
+      left: 10%;
+      top: 10%;
+      transform: translate (-10%, -10%);
+      height: 400px;
+      width: 600px;
+      background-image: url(midias/web.jpg ) ;
+      background-size: cover;}
